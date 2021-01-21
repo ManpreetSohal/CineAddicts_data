@@ -1,2 +1,2 @@
 # CineAddicts_data
-Program to fetch and store data in database of movies on WikiData and TMDB.
+PHP program that fetches data of all movie instances on WikiData and stores it inside a MySQL database.
