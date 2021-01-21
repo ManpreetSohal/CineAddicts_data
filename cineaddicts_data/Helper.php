@@ -110,10 +110,10 @@ class Helper {
                 $requestURL = "https://www.wikidata.org/w/api.php?action=wbgetentities&ids={$id}&format=json&languages=en"; 
         }
         else if ($requestCode == 1){
-            $requestURL = "http://api.themoviedb.org/3/find/{$id}?api_key=10462fa47fb42da4094335ab2922cb91&external_source=imdb_id&format=json"; 
+            $requestURL = "http://api.themoviedb.org/3/find/{$id}?api_key=TMDB_API_KEY&external_source=imdb_id&format=json"; 
         }
         else if($requestCode == 2){
-            $requestURL = "https://api.themoviedb.org/3/person/{$id}?api_key=10462fa47fb42da4094335ab2922cb91";
+            $requestURL = "https://api.themoviedb.org/3/person/{$id}?api_key=TMDB_API_KEY";
         }
 
         $apiResult['request'] = ['method' => 'GET', 'url' => $requestURL];
